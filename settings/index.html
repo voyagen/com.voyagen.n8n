@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>API Key Settings</title>
+    <script
+      type="text/javascript"
+      src="/homey.js"
+      data-origin="settings"
+    ></script>
+  </head>
+  <body>
+    <h1>App Settings</h1>
+
+    <div>
+      <label for="api_key">N8N API Key:</label>
+      <input type="password" id="api_key" />
+      <button id="saveApiKeyButton">Save API Key</button>
+    </div>
+
+    <hr />
+
+    <div>
+      <label for="n8n_base_url">N8N Base URL:</label>
+      <input
+        type="text"
+        id="n8n_base_url"
+        placeholder="e.g., http://localhost:5678"
+      />
+      <button id="saveN8nBaseUrlButton">Save Base URL</button>
+    </div>
+
+    <hr />
+
+    <div>
+      <h2>Webhook Authentication Settings</h2>
+      <div>
+        <label for="webhook_auth_type">Authentication Type:</label>
+        <select id="webhook_auth_type">
+          <option value="none" selected>None</option>
+          <option value="basic">Basic Auth</option>
+          <option value="jwt">JWT Token</option>
+          <option value="header">Custom Header</option>
+        </select>
+      </div>
+
+      <div
+        id="auth_details_basic"
+        class="auth-details"
+        style="display: none; margin-top: 10px"
+      >
+        <label for="webhook_auth_basic_user">Username:</label>
+        <input type="text" id="webhook_auth_basic_user" /><br />
+        <label for="webhook_auth_basic_pass">Password:</label>
+        <input type="password" id="webhook_auth_basic_pass" />
+      </div>
+
+      <div
+        id="auth_details_jwt"
+        class="auth-details"
+        style="display: none; margin-top: 10px"
+      >
+        <label for="webhook_auth_jwt_token">JWT Token:</label>
+        <input
+          type="password"
+          id="webhook_auth_jwt_token"
+          style="width: 300px"
+        />
+      </div>
+
+      <div
+        id="auth_details_header"
+        class="auth-details"
+        style="display: none; margin-top: 10px"
+      >
+        <label for="webhook_auth_header_name">Header Name:</label>
+        <input
+          type="text"
+          id="webhook_auth_header_name"
+          placeholder="e.g., X-Custom-Auth"
+        /><br />
+        <label for="webhook_auth_header_value">Header Value:</label>
+        <input
+          type="text"
+          id="webhook_auth_header_value"
+          style="width: 300px"
+        />
+      </div>
+      <button id="saveWebhookAuthButton" style="margin-top: 10px">
+        Save Webhook Auth
+      </button>
+    </div>
+
+    <script src="settings.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "title": { "en": "Start n8n Flow" },
+  "titleFormatted": { "en": "Start [[flow]]" },
+  "args": [
+    {
+      "type": "autocomplete",
+      "name": "flow",
+      "title": { "en": "Workflow (with Webhook)" }
+    }
+  ]
+}

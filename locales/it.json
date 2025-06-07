@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "title": "Impostazioni dell'app",
+    "apiKey": "Chiave API N8N:",
+    "saveApiKey": "Salva chiave API",
+    "n8nBaseUrl": "URL di base N8N:",
+    "n8nBaseUrlPlaceholder": "ad es. http://localhost:5678",
+    "saveBaseUrl": "Salva URL di base",
+    "webhookAuth": {
+      "title": "Impostazioni di autenticazione Webhook",
+      "authType": "Tipo di autenticazione:",
+      "none": "Nessuna",
+      "basic": "Autenticazione di base",
+      "jwt": "Token JWT",
+      "header": "Intestazione personalizzata",
+      "username": "Nome utente:",
+      "password": "Password:",
+      "jwtToken": "Token JWT:",
+      "headerName": "Nome intestazione:",
+      "headerNamePlaceholder": "ad es. X-Custom-Auth",
+      "headerValue": "Valore intestazione:",
+      "save": "Salva autenticazione Webhook"
+    },
+    "webhookNote": "Importante: i tuoi flussi di lavoro n8n devono avere un trigger webhook per avviare il webhook e il flusso di lavoro deve essere attivo."
+  }
+}

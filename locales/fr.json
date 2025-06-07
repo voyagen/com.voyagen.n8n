@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "title": "Paramètres de l'application",
+    "apiKey": "Clé API N8N :",
+    "saveApiKey": "Enregistrer la clé API",
+    "n8nBaseUrl": "URL de base N8N :",
+    "n8nBaseUrlPlaceholder": "par exemple, http://localhost:5678",
+    "saveBaseUrl": "Enregistrer l'URL de base",
+    "webhookAuth": {
+      "title": "Paramètres d'authentification Webhook",
+      "authType": "Type d'authentification :",
+      "none": "Aucun",
+      "basic": "Authentification de base",
+      "jwt": "Jeton JWT",
+      "header": "En-tête personnalisé",
+      "username": "Nom d'utilisateur :",
+      "password": "Mot de passe :",
+      "jwtToken": "Jeton JWT :",
+      "headerName": "Nom de l'en-tête :",
+      "headerNamePlaceholder": "par exemple, X-Custom-Auth",
+      "headerValue": "Valeur de l'en-tête :",
+      "save": "Enregistrer l'authentification Webhook"
+    },
+    "webhookNote": "Important : Vos flux de travail n8n doivent avoir un déclencheur de webhook pour démarrer le webhook et le flux de travail doit être actif."
+  }
+}

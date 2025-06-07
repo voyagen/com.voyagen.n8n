@@ -5,10 +5,24 @@
   "sdk": 3,
   "platforms": ["local"],
   "name": {
-    "en": "n8n"
+    "en": "n8n",
+    "de": "n8n",
+    "fr": "n8n",
+    "es": "n8n",
+    "it": "n8n",
+    "pt": "n8n",
+    "nl": "n8n",
+    "pl": "n8n"
   },
   "description": {
-    "en": "This app allows you to trigger an n8n workflow."
+    "en": "This app allows you to trigger an n8n workflow.",
+    "de": "Mit dieser App können Sie einen n8n-Workflow auslösen.",
+    "fr": "Cette application vous permet de déclencher un flux de travail n8n.",
+    "es": "Esta aplicación le permite activar un flujo de trabajo de n8n.",
+    "it": "Questa app ti consente di attivare un flusso di lavoro n8n.",
+    "pt": "Este aplicativo permite que você acione um fluxo de trabalho n8n.",
+    "nl": "Met deze app kun je een n8n-workflow activeren.",
+    "pl": "Ta aplikacja umożliwia wyzwalanie przepływu pracy n8n."
   },
   "category": ["internet"],
   "permissions": [],

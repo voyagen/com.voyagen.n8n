@@ -8,39 +8,67 @@
       src="/homey.js"
       data-origin="settings"
     ></script>
+    <style>
+      .note {
+        font-size: 0.9em;
+        color: #666;
+        margin-top: 20px;
+        border-top: 1px solid #ccc;
+        padding-top: 10px;
+      }
+    </style>
   </head>
   <body>
-    <h1>App Settings</h1>
+    <h1 data-i18n="settings.title">App Settings</h1>
 
     <div>
-      <label for="api_key">N8N API Key:</label>
+      <label for="api_key" data-i18n="settings.apiKey">N8N API Key:</label>
       <input type="password" id="api_key" />
-      <button id="saveApiKeyButton">Save API Key</button>
+      <button id="saveApiKeyButton" data-i18n="settings.saveApiKey">
+        Save API Key
+      </button>
     </div>
 
     <hr />
 
     <div>
-      <label for="n8n_base_url">N8N Base URL:</label>
+      <label for="n8n_base_url" data-i18n="settings.n8nBaseUrl"
+        >N8N Base URL:</label
+      >
       <input
         type="text"
         id="n8n_base_url"
+        data-i18n-placeholder="settings.n8nBaseUrlPlaceholder"
         placeholder="e.g., http://localhost:5678"
       />
-      <button id="saveN8nBaseUrlButton">Save Base URL</button>
+      <button id="saveN8nBaseUrlButton" data-i18n="settings.saveBaseUrl">
+        Save Base URL
+      </button>
     </div>
 
     <hr />
 
     <div>
-      <h2>Webhook Authentication Settings</h2>
+      <h2 data-i18n="settings.webhookAuth.title">
+        Webhook Authentication Settings
+      </h2>
       <div>
-        <label for="webhook_auth_type">Authentication Type:</label>
+        <label for="webhook_auth_type" data-i18n="settings.webhookAuth.authType"
+          >Authentication Type:</label
+        >
         <select id="webhook_auth_type">
-          <option value="none" selected>None</option>
-          <option value="basic">Basic Auth</option>
-          <option value="jwt">JWT Token</option>
-          <option value="header">Custom Header</option>
+          <option value="none" selected data-i18n="settings.webhookAuth.none">
+            None
+          </option>
+          <option value="basic" data-i18n="settings.webhookAuth.basic">
+            Basic Auth
+          </option>
+          <option value="jwt" data-i18n="settings.webhookAuth.jwt">
+            JWT Token
+          </option>
+          <option value="header" data-i18n="settings.webhookAuth.header">
+            Custom Header
+          </option>
         </select>
       </div>
 
@@ -49,9 +77,17 @@
         class="auth-details"
         style="display: none; margin-top: 10px"
       >
-        <label for="webhook_auth_basic_user">Username:</label>
+        <label
+          for="webhook_auth_basic_user"
+          data-i18n="settings.webhookAuth.username"
+          >Username:</label
+        >
         <input type="text" id="webhook_auth_basic_user" /><br />
-        <label for="webhook_auth_basic_pass">Password:</label>
+        <label
+          for="webhook_auth_basic_pass"
+          data-i18n="settings.webhookAuth.password"
+          >Password:</label
+        >
         <input type="password" id="webhook_auth_basic_pass" />
       </div>
 
@@ -60,7 +96,11 @@
         class="auth-details"
         style="display: none; margin-top: 10px"
       >
-        <label for="webhook_auth_jwt_token">JWT Token:</label>
+        <label
+          for="webhook_auth_jwt_token"
+          data-i18n="settings.webhookAuth.jwtToken"
+          >JWT Token:</label
+        >
         <input
           type="password"
           id="webhook_auth_jwt_token"
@@ -73,22 +113,42 @@
         class="auth-details"
         style="display: none; margin-top: 10px"
       >
-        <label for="webhook_auth_header_name">Header Name:</label>
+        <label
+          for="webhook_auth_header_name"
+          data-i18n="settings.webhookAuth.headerName"
+          >Header Name:</label
+        >
         <input
           type="text"
           id="webhook_auth_header_name"
+          data-i18n-placeholder="settings.webhookAuth.headerNamePlaceholder"
           placeholder="e.g., X-Custom-Auth"
         /><br />
-        <label for="webhook_auth_header_value">Header Value:</label>
+        <label
+          for="webhook_auth_header_value"
+          data-i18n="settings.webhookAuth.headerValue"
+          >Header Value:</label
+        >
         <input
           type="text"
           id="webhook_auth_header_value"
           style="width: 300px"
         />
       </div>
-      <button id="saveWebhookAuthButton" style="margin-top: 10px">
+      <button
+        id="saveWebhookAuthButton"
+        style="margin-top: 10px"
+        data-i18n="settings.webhookAuth.save"
+      >
         Save Webhook Auth
       </button>
+    </div>
+
+    <div>
+      <p class="note" data-i18n="settings.webhookNote">
+        Important: Your n8n workflows need to have a webhook trigger to start
+        the webhook and the workflow needs to be active.
+      </p>
     </div>
 
     <script src="settings.js"></script>

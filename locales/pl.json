@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "title": "Ustawienia aplikacji",
+    "apiKey": "Klucz API N8N:",
+    "saveApiKey": "Zapisz klucz API",
+    "n8nBaseUrl": "Bazowy adres URL N8N:",
+    "n8nBaseUrlPlaceholder": "np. http://localhost:5678",
+    "saveBaseUrl": "Zapisz bazowy adres URL",
+    "webhookAuth": {
+      "title": "Ustawienia uwierzytelniania Webhook",
+      "authType": "Typ uwierzytelniania:",
+      "none": "Brak",
+      "basic": "Uwierzytelnianie podstawowe",
+      "jwt": "Token JWT",
+      "header": "Niestandardowy nagłówek",
+      "username": "Nazwa użytkownika:",
+      "password": "Hasło:",
+      "jwtToken": "Token JWT:",
+      "headerName": "Nazwa nagłówka:",
+      "headerNamePlaceholder": "np. X-Custom-Auth",
+      "headerValue": "Wartość nagłówka:",
+      "save": "Zapisz uwierzytelnianie Webhook"
+    },
+    "webhookNote": "Ważne: Twoje przepływy pracy n8n muszą mieć wyzwalacz webhook, aby uruchomić webhook, a przepływ pracy musi być aktywny."
+  }
+}

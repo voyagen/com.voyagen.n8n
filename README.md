@@ -7,6 +7,7 @@ This app integrates n8n with Homey, allowing you to trigger n8n workflows from y
 - Trigger n8n workflows from Homey flows.
 - Autocomplete for n8n workflows in the Homey flow editor.
 - Support for various webhook authentication methods (Basic, JWT, Header).
+- Multi-language support for the app interface and settings, including English, German, French, Spanish, Italian, Portuguese, Dutch, and Polish.
 
 ## Installation
 

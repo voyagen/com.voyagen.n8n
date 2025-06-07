@@ -2,6 +2,9 @@
 function onHomeyReady(Homey) {
   // console.log("Settings page: onHomeyReady called.");
 
+  // --- Internationalization ---
+  initI18n(Homey);
+
   // --- Load initial values ---
   loadApiKey(Homey);
   loadN8nBaseUrl(Homey);
@@ -189,6 +192,34 @@ function saveWebhookAuthSettings(Homey) {
 
   Homey.toast("Webhook authentication settings saved", "success");
   // console.log("Webhook authentication settings saved for type:", authType);
+}
+
+// --- Internationalization Functions ---
+async function initI18n(Homey) {
+  const language = Homey.env.language || "en";
+  const translations = await fetch(`../locales/${language}.json`).then((res) =>
+    res.json()
+  );
+
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.getAttribute("data-i18n");
+    const translation = getTranslation(translations, key);
+    if (translation) {
+      element.innerHTML = translation;
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+    const key = element.getAttribute("data-i18n-placeholder");
+    const translation = getTranslation(translations, key);
+    if (translation) {
+      element.placeholder = translation;
+    }
+  });
+}
+
+function getTranslation(translations, key) {
+  return key.split(".").reduce((obj, i) => (obj ? obj[i] : null), translations);
 }
 
 // console.log("settings.js: Script loaded. Global onHomeyReady function defined.");

@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "title": "Configurações do aplicativo",
+    "apiKey": "Chave de API N8N:",
+    "saveApiKey": "Salvar chave de API",
+    "n8nBaseUrl": "URL base do N8N:",
+    "n8nBaseUrlPlaceholder": "por exemplo, http://localhost:5678",
+    "saveBaseUrl": "Salvar URL base",
+    "webhookAuth": {
+      "title": "Configurações de autenticação de webhook",
+      "authType": "Tipo de autenticação:",
+      "none": "Nenhum",
+      "basic": "Autenticação básica",
+      "jwt": "Token JWT",
+      "header": "Cabeçalho personalizado",
+      "username": "Nome de usuário:",
+      "password": "Senha:",
+      "jwtToken": "Token JWT:",
+      "headerName": "Nome do cabeçalho:",
+      "headerNamePlaceholder": "por exemplo, X-Custom-Auth",
+      "headerValue": "Valor do cabeçalho:",
+      "save": "Salvar autenticação de webhook"
+    },
+    "webhookNote": "Importante: seus fluxos de trabalho n8n precisam ter um gatilho de webhook para iniciar o webhook e o fluxo de trabalho precisa estar ativo."
+  }
+}

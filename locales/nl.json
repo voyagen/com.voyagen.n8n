@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "title": "App-instellingen",
+    "apiKey": "N8N API-sleutel:",
+    "saveApiKey": "API-sleutel opslaan",
+    "n8nBaseUrl": "N8N-basis-URL:",
+    "n8nBaseUrlPlaceholder": "bijv. http://localhost:5678",
+    "saveBaseUrl": "Basis-URL opslaan",
+    "webhookAuth": {
+      "title": "Webhook-authenticatie-instellingen",
+      "authType": "Authenticatietype:",
+      "none": "Geen",
+      "basic": "Basisverificatie",
+      "jwt": "JWT-token",
+      "header": "Aangepaste header",
+      "username": "Gebruikersnaam:",
+      "password": "Wachtwoord:",
+      "jwtToken": "JWT-token:",
+      "headerName": "Headernaam:",
+      "headerNamePlaceholder": "bijv. X-Custom-Auth",
+      "headerValue": "Headerwaarde:",
+      "save": "Webhook-authenticatie opslaan"
+    },
+    "webhookNote": "Belangrijk: uw n8n-workflows moeten een webhook-trigger hebben om de webhook te starten en de workflow moet actief zijn."
+  }
+}

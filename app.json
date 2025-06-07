@@ -8,10 +8,24 @@
     "local"
   ],
   "name": {
-    "en": "n8n"
+    "en": "n8n",
+    "de": "n8n",
+    "fr": "n8n",
+    "es": "n8n",
+    "it": "n8n",
+    "pt": "n8n",
+    "nl": "n8n",
+    "pl": "n8n"
   },
   "description": {
-    "en": "This app allows you to trigger an n8n workflow."
+    "en": "This app allows you to trigger an n8n workflow.",
+    "de": "Mit dieser App können Sie einen n8n-Workflow auslösen.",
+    "fr": "Cette application vous permet de déclencher un flux de travail n8n.",
+    "es": "Esta aplicación le permite activar un flujo de trabajo de n8n.",
+    "it": "Questa app ti consente di attivare un flusso di lavoro n8n.",
+    "pt": "Este aplicativo permite que você acione um fluxo de trabalho n8n.",
+    "nl": "Met deze app kun je een n8n-workflow activeren.",
+    "pl": "Ta aplikacja umożliwia wyzwalanie przepływu pracy n8n."
   },
   "category": [
     "internet"
@@ -31,17 +45,38 @@
     "actions": [
       {
         "title": {
-          "en": "Start n8n Flow"
+          "en": "Start n8n Flow",
+          "de": "n8n-Flow starten",
+          "fr": "Démarrer le flux n8n",
+          "es": "Iniciar flujo de n8n",
+          "it": "Avvia flusso n8n",
+          "pt": "Iniciar fluxo n8n",
+          "nl": "Start n8n-flow",
+          "pl": "Uruchom przepływ n8n"
         },
         "titleFormatted": {
-          "en": "Start [[flow]]"
+          "en": "Start [[flow]]",
+          "de": "Start [[flow]]",
+          "fr": "Démarrer [[flow]]",
+          "es": "Iniciar [[flow]]",
+          "it": "Avvia [[flow]]",
+          "pt": "Iniciar [[flow]]",
+          "nl": "Start [[flow]]",
+          "pl": "Uruchom [[flow]]"
         },
         "args": [
           {
             "type": "autocomplete",
             "name": "flow",
             "title": {
-              "en": "Workflow (with Webhook)"
+              "en": "Workflow (with Webhook)",
+              "de": "Workflow (mit Webhook)",
+              "fr": "Flux de travail (avec Webhook)",
+              "es": "Flujo de trabajo (con Webhook)",
+              "it": "Flusso di lavoro (con Webhook)",
+              "pt": "Fluxo de trabalho (com Webhook)",
+              "nl": "Workflow (met Webhook)",
+              "pl": "Przepływ pracy (z Webhookiem)"
             }
           }
         ],

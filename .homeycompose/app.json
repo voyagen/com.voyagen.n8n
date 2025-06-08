@@ -3,9 +3,7 @@
   "version": "2.0.0",
   "compatibility": ">=5.0.0",
   "sdk": 3,
-  "platforms": [
-    "local"
-  ],
+  "platforms": ["local"],
   "name": {
     "en": "n8n",
     "de": "n8n",
@@ -26,10 +24,8 @@
     "nl": "Met deze app kun je een n8n-workflow activeren.",
     "pl": "Ta aplikacja umożliwia wyzwalanie przepływu pracy n8n."
   },
-  "category": [
-    "internet"
-  ],
-  "permissions": [],
+  "category": ["internet"],
+  "permissions": ["homey:manager:api"],
   "images": {
     "small": "/assets/images/small.png",
     "large": "/assets/images/large.png"
